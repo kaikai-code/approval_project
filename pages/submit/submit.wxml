@@ -1,0 +1,131 @@
+<wux-toptips id="wux-toptips" />
+<wux-dialog id="wux-dialog" />
+  <wux-dialog id="wux-dialog--alert" />
+<view class="out">
+  <view class="title">{{ title }}</view>
+  <view class="formcls">
+  
+  
+      <!-- <wux-cascader visible="{{ visible1 }}" default-value="{{ value1 }}" title="选择项目" options="{{ options1 }}" bind:close="onClose1" bind:change="onChange1" /> -->
+     <wux-cascader visible="{{ visible1 }}" controlled value="{{ value1 }}" title="请选择项目" options="{{ options1 }}" bind:close="onClose1" bind:change="onChange1" bind:load="onLoadOptions1" />
+     
+    <wux-popup-select visible="{{ visible2 }}" controlled bind:confirm="onConfirm" bind:valueChange="onValueChange" bind:visibleChange="onVisibleChange" />
+
+
+    <wux-popup position="bottom" visible="{{ visible3 }}" bind:close="close">
+    <wux-cell-group title="请确认表单内容">
+        <!-- <wux-cell hover-class="none" title="Jack Ma"></wux-cell>
+        <wux-cell hover-class="none" title="Pony"></wux-cell>
+        <wux-cell hover-class="none"> -->
+        <wux-cell hover-class="none" title="项目:" extra="{{ displayValue1 }}" ></wux-cell>
+        <wux-cell hover-class="none" title="物品类型:" extra="{{ displayValue2 }}"></wux-cell>
+        <wux-cell hover-class="none" title="紧急度:" extra="{{ displayValue3 }}"></wux-cell>
+        <wux-cell hover-class="none" title="影响范围:" extra="{{ displayValue4 }}"></wux-cell>
+        <wux-cell hover-class="none" title="{{item.label}}/数量:" extra="{{ item.count }}" wx:for="{{options2_info}}" wx:key="name"></wux-cell>
+        <wux-cell hover-class="none" title="总价:" extra="{{ price }}"></wux-cell>
+        <wux-cell hover-class="none" title="备注:" extra="{{ value5 }}"></wux-cell>
+        
+        
+        <wux-button block type="balanced" bindtap="Upload">Yes</wux-button>
+        <!-- </wux-cell> -->
+    </wux-cell-group>
+</wux-popup>
+
+
+
+
+
+
+
+      <view class="page__bd">
+      <wux-cell-group >
+        <wux-popup-select value="{{ value6 }}" options="{{ options6 }}" data-index="6" bind:confirm="onConfirm">
+          <wux-cell title="父级服务单" is-link extra="{{ displayValue6 }}"></wux-cell>
+            </wux-popup-select>
+
+
+          <wux-cell title="项目" extra="{{ displayValue1 }}" is-link bind:click="onOpen1"></wux-cell>
+
+          <wux-popup-select value="{{ value2 }}" options="{{ options2 }}" data-index="2"  multiple max="3" bind:confirm="onConfirm">
+          <wux-cell title="物品类型" is-link extra="{{ displayValue2 }}"></wux-cell>
+            </wux-popup-select>
+
+
+          <wux-popup-select value="{{ value3 }}" options="{{ options3 }}" data-index="3" bind:confirm="onConfirm">
+          <wux-cell title="紧急度" is-link extra="{{ displayValue3 }}"></wux-cell>
+            </wux-popup-select>
+
+          <wux-popup-select value="{{ value4 }}" options="{{ options4 }}" data-index="4" bind:confirm="onConfirm">
+          <wux-cell title="影响范围" is-link extra="{{ displayValue4 }}"></wux-cell>
+            </wux-popup-select>
+
+            <wux-cell hover-class="none" wx:for="{{options2_info}}" title="{{item.label}}/数量" wx:key="name" >
+              <wux-input-number value="1" min="{{ 1 }}" max="{{ 10 }}" longpress slot="footer" disabled="{{false}}" controlled bind:change="numchange" data-index="{{index}}" />
+                <!-- <wux-input label="{{item}}数量" placeholder="请填写数量" /> -->
+            </wux-cell>
+           <wux-cell hover-class="none" title="总价" extra="{{price}}￥"></wux-cell>
+          <!-- <wux-cell hover-class="none">
+                <wux-input label="总价" placeholder="选填" />
+            </wux-cell> -->
+          <!-- <wux-cell hover-class="none">
+                <wux-input label="备注" placeholder="如：物品名称，数量等" />
+            </wux-cell> -->
+          <wux-cell hover-class="none">
+                <wux-textarea rows="3" label="备注" placeholder="如：物品名称，数量等" hasCount  bind:confirm="remark" bind:blur="remark" bind:change="remark" value="{{value5}}" controlled/>
+            </wux-cell>
+          
+          <wux-cell title="委托联系人" extra="{{mandator_show}}"  bind:click="show_mandator"></wux-cell>
+          <wux-cell  wx:if="{{mandator_flag}}" hover-class="none">
+          <view class="add_mandator" >
+          <wux-cell hover-class="none">
+            <wux-input label="姓名" value="{{ value7 }}" controlled type="text" maxlength="5" placeholder="请输入姓名" bind:change="mandator_name" bind:blur="mandator_name" bind:confirm="mandator_name"/>
+            </wux-cell>
+            <wux-cell hover-class="none">
+            <wux-input label="电话" value="{{ value8 }}" controlled type="number" placeholder="请输入电话" bind:change="mandator_tel" bind:blur="mandator_tel" bind:confirm="mandator_tel"/>
+            </wux-cell>
+            <wux-cell hover-class="none">
+            <wux-textarea rows="3" label="备注" placeholder="请填写备注信息" hasCount  bind:confirm="mandator_remark" bind:blur="mandator_remark" bind:change="mandator_remark" value="{{value9}}" controlled/>
+            </wux-cell>
+
+          </view>
+
+          <view class="mandator_butt">
+            <wux-button block type="balanced" outline bind:click="verify_mandator" >确认添加</wux-button>
+          </view>
+
+          </wux-cell>
+        <wux-cell hover-class="none">
+        <view class="task">
+    <wux-wing-blank size="default">
+      <wux-card title="UPC-0001-情报科" extra="非常高" actions="{{ actions }}" bind:action="onAction">
+              <view class="task_info" slot="body">
+              <view slot="body">马凯凯</view>
+              <view slot="body">2020-03-05</view>
+              </view>
+              <view slot="body">办公用品申请</view>
+              <view slot="footer">审批中：科长审批</view>
+        </wux-card>
+    </wux-wing-blank>
+    </view>
+    </wux-cell>
+          
+
+
+      </wux-cell-group>
+      </view>
+
+
+      <view class="uploadcls">
+      <wux-upload listType="picture-card" fileList="{{ fileList }}" max="4" count="4" uploaded controlled bind:preview="onPreview" bind:before="upbefore">
+            <text>上传图片</text>
+        </wux-upload>
+      </view>
+      <view class="buttcls">
+      <wux-button block type="balanced" bind:click="verify">提交</wux-button>
+      <wux-button block outline type="stable" bind:click="reset">重置</wux-button>
+      </view>
+    
+
+  </view>
+
+</view>
