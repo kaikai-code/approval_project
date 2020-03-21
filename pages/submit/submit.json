@@ -1,0 +1,24 @@
+{
+  "usingComponents": {
+    "wux-cell-group": "../../wux/cell-group/index",
+    "wux-cell": "../../wux/cell/index",
+    "wux-cascader": "../../wux/cascader/index",
+    "wux-picker": "../../wux/picker/index",
+    "wux-button": "../../wux/button/index",
+    "wux-popup-select": "../../wux/popup-select/index",
+    "wux-input": "../../wux/input/index",
+    "wux-form": "../../wux/form/index",
+    "wux-field": "../../wux/field/index",
+    "wux-upload": "../../wux/upload/index",
+    "wux-input-number": "../../wux/input-number/index",
+    "wux-textarea": "../../wux/textarea/index",
+    "wux-dialog": "../../wux/dialog/index",
+    "wux-popup": "../../wux/popup/index",
+    "wux-toptips": "../../wux/toptips/index",
+    "wux-accordion-group": "../../wux/accordion-group/index",
+    "wux-accordion": "../../wux/accordion/index",
+    "wux-card": "../../wux/card/index",
+    "wux-wing-blank": "../../wux/wing-blank/index"
+  },
+  "navigationBarTitleText": "表单填写"
+}

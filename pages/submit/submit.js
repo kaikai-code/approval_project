@@ -159,7 +159,15 @@ Page({
     }],
 
     fileList: [],
-    image_id: []
+    image_id: [],
+    mandator_flag: false,
+    mandator_show: "点击添加委托联系人 +",
+
+    value7: '',
+    value8: '',
+    value9: '',
+    mandator_list: []
+
   },
 
   onOpen1() {
@@ -317,6 +325,60 @@ Page({
     this.setData({value5: e.detail.value})
   },
 
+  mandator_name: function(e){
+    console.log(e)
+    this.setData({ value7: e.detail.value })
+  },
+  mandator_tel: function (e) {
+    console.log(e)
+    this.setData({ value8: e.detail.value })
+  },
+  mandator_remark: function (e) {
+    console.log(e)
+    this.setData({ value9: e.detail.value })
+  },
+
+  verify_mandator: function(){
+    var mandator_name = this.data.value7
+    var mandator_tel = this.data.value8
+    var mandator_remark = this.data.value9
+    var flag = true
+    var content = ""
+    var mandator_list = this.data.mandator_list
+
+    if(mandator_name.trim().length === 0){
+      content = "请填写姓名后提交"
+      flag = false
+    } else if (mandator_tel.length === 0){
+      content = "请填写电话后提交"
+      flag = false
+    }
+    if (!flag) {
+      $wuxDialog().alert({
+        resetOnClose: true,
+        closeable: true,
+        title: '提醒',
+        content: content,
+      })
+    } else {
+      mandator_list.push({
+        "name": mandator_name,
+        "tel": mandator_tel,
+        "remark": mandator_remark
+      })
+      this.setData({ 
+        mandator_list: mandator_list,
+        mandator_flag: false,
+        value7: "",
+        value8: "",
+        value9: ""
+        })
+      console.log(mandator_list)
+
+    }
+
+  },
+
 
   reset: function(){
     var that = this
@@ -385,15 +447,11 @@ Page({
       flag = false
     }
     if (!flag){
-      $wuxDialog().confirm({
+      $wuxDialog().alert({
         resetOnClose: true,
         closeable: true,
         title: '提醒',
         content: content,
-        onConfirm(e) {
-        },
-        onCancel(e) {
-        },
       })
     }else{
       this.open()
@@ -554,7 +612,20 @@ Page({
 
   },
 
+  show_mandator(e){
+    var mandator_flag = this.data.mandator_flag
+    var mandator_show = this.data.mandator_show
+    if (mandator_flag){
+      mandator_show = "点击添加委托联系人 +"
+    }else{
+      mandator_show = "点击取消添加 -"
+    }
 
+    this.setData({
+      mandator_flag: !mandator_flag,
+      mandator_show: mandator_show
+    })
+  },
 
 
   upbefore(e){

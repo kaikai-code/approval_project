@@ -25,3 +25,26 @@
   /* width: 100% - 230rpx; */
   word-break:break-all;
 }
+
+.add_mandator {
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  margin-bottom: 5rpx;
+  margin-top: 5rpx;
+  border: 1rpx solid #F1F1F1;
+  /* border-left: 1rpx solid #F1F1F1; */
+  /* border-right: 1rpx solid #F1F1F1; */
+  border-radius: 5px;
+  
+}
+
+.mandator_butt {
+  margin-left: 80rpx;
+  margin-right: 80rpx;
+
+}
+
+.task {
+  margin-bottom: 10rpx;
+  margin-top: 10rpx;
+}
