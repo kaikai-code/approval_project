@@ -1,0 +1,13 @@
+<wux-dialog id="wux-dialog" />
+<wux-toptips id="wux-toptips" />
+<wux-dialog id="wux-dialog--alert" />
+
+<view class="container"> 
+  <view class="logo-group">
+
+    <image class="logo" src="../../images/login.png"></image>
+  </view>
+  <view class="tips">授权并登录后才可使用后续功能</view>
+  <button open-type="getUserInfo" type="primary" bind:getuserinfo="onLoginEvent" class="butt">授权并登录</button>
+  <button type="default" class="butt" bind:tap="returnindex">返回</button>
+</view>

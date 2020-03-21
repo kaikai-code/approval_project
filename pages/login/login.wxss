@@ -1,0 +1,23 @@
+.container{
+  padding: 0 40rpx;
+}
+
+.container .logo-group{
+  margin-top: 100rpx;
+}
+
+.logo-group .logo{
+  width: 200rpx;
+  height: 200rpx;
+}
+
+.container .tips{
+  font-size: 32rpx;
+  color: #646464;
+  margin-top: 100rpx;
+}
+
+.container .butt{
+  width: 100%;
+  margin-top: 20rpx;
+}

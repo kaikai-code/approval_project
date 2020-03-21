@@ -1,0 +1,18 @@
+<view class="outcls">
+  <view class="avatar">
+    <!-- <wux-avatar size="large" src="{{ avatar }}" /> -->
+    <image src="{{ avatar }}" class="avatarcls"></image>
+  </view>
+  <view class="name">{{ name }}</view>
+
+  <view class="info">
+      <wux-cell-group title="个人详情">
+            <wux-cell thumb="../../images/mine_info2.png" title="个人信息" is-link url="../../pages/my_info/my_info"></wux-cell>
+      <wux-cell thumb="../../images/mine_task2.png" title="我的任务" is-link url="../../pages/my_task/my_task"></wux-cell>
+      <wux-cell thumb="../../images/mine_approve2.png" title="我的审批" is-link url="../../pages/my_approve/my_approve"></wux-cell>
+      <wux-cell thumb="../../images/mine_submit2.png" title="我的提交" is-link url="../../pages/my_submit/my_submit"></wux-cell>
+      <wux-cell thumb="../../images/mine_serve_info2.png" title="我的服务" is-link url="../../pages/my_serve/my_serve"></wux-cell>
+      <wux-cell thumb="../../images/mine_serve2.png" title="服务台"  is-link url="../../pages/service_counter/service_counter"></wux-cell>
+        </wux-cell-group>
+  </view>
+</view>

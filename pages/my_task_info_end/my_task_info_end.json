@@ -1,0 +1,15 @@
+{
+  "usingComponents": {
+    "wux-cell-group": "../../wux/cell-group/index",
+    "wux-cell": "../../wux/cell/index",
+    "wux-card": "../../wux/card/index",
+    "wux-wing-blank": "../../wux/wing-blank/index",
+    "wux-dialog": "../../wux/dialog/index",
+    "wux-button": "../../wux/button/index",
+    "wux-actionsheet": "../../wux/actionsheet/index",
+    "wux-toptips": "../../wux/toptips/index",
+    "wux-upload": "../../wux/upload/index",
+    "wux-textarea": "../../wux/textarea/index"
+  },
+  "navigationBarTitleText": "任务结束"
+}

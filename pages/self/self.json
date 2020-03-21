@@ -1,0 +1,15 @@
+{
+  "usingComponents": {
+    "wux-cell-group": "../../wux/cell-group/index",
+    "wux-cell": "../../wux/cell/index",
+    "wux-cascader": "../../wux/cascader/index",
+    "wux-picker": "../../wux/picker/index",
+    "wux-button": "../../wux/button/index",
+    "wux-popup-select": "../../wux/popup-select/index",
+    "wux-input": "../../wux/input/index",
+    "wux-form": "../../wux/form/index",
+    "wux-field": "../../wux/field/index",
+    "wux-upload": "../../wux/upload/index"
+  },
+  "navigationBarTitleText": "表单填写"
+}

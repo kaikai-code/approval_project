@@ -1,0 +1,60 @@
+<view class="outcls">
+
+  <view class="page__bd">
+        <wux-filterbar items="{{ items }}" bind:change="onChange_filter" bind:open="onOpen" bind:close="onClose" />
+    </view>
+
+
+
+
+
+
+
+  <view class="task">
+    <wux-wing-blank size="default">
+      <wux-card title="UPC-0001-情报科" extra="非常高" actions="{{ actions }}" bind:action="onAction">
+              <view class="task_info" slot="body">
+              <view slot="body">马凯凯</view>
+              <view slot="body">2020-03-05</view>
+              </view>
+              <view slot="body">办公用品申请</view>
+              <view slot="footer">审批中：科长审批</view>
+        </wux-card>
+    </wux-wing-blank>
+    </view>
+    <view class="task">
+    <wux-wing-blank size="default">
+      <wux-card title="UPC-0001-情报科" extra="高" actions="{{ actions }}" bind:action="onAction">
+              <view class="task_info" slot="body">
+              <view slot="body">马凯凯</view>
+              <view slot="body">2020-03-05</view>
+              </view>
+              <view slot="body">办公用品申请</view>
+              <view slot="footer">审批完成</view>
+        </wux-card>
+    </wux-wing-blank>
+    </view>
+    <view class="task">
+    <wux-wing-blank size="default">
+      <wux-card title="UPC-0001-情报科" extra="低" actions="{{ actions }}" bind:action="onAction">
+              <view class="task_info" slot="body">
+              <view slot="body">马凯凯</view>
+              <view slot="body">2020-03-05</view>
+              </view>
+              <view slot="body">办公用品申请</view>
+              <view slot="footer">审批完成</view>
+        </wux-card>
+    </wux-wing-blank>
+    </view>
+
+    <view class="page">
+      <wux-pagination current="{{ current }}" total="5" mode="button" controlled bind:change="onChange">
+            <view slot="prev">Prev</view>
+            <view slot="next">Next</view>
+        </wux-pagination>
+    
+    </view>
+    
+  
+
+</view>

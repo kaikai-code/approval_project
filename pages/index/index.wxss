@@ -1,0 +1,14 @@
+.inone {
+  width: 100%;
+  height: 350rpx;
+
+}
+
+.imagecls {
+  width: 100%;
+  height: 350rpx;
+}
+
+.sub-title {
+  margin-left: 20rpx;
+}

@@ -1,0 +1,27 @@
+
+.title {
+  width: 100%;
+  height: 50rpx;
+  margin-left: 30rpx;
+  margin-bottom: 30rpx;
+  
+}
+
+.uploadcls {
+  margin-top: 30rpx;
+  margin-left: 30rpx;
+}
+
+.buttcls {
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+}
+
+.wux-cell__text {
+  width: 230rpx;
+}
+
+.wux-cell__ft {
+  /* width: 100% - 230rpx; */
+  word-break:break-all;
+}

@@ -1,0 +1,45 @@
+<view class="out">
+  <view class="title">自助服务表单填写</view>
+  <view class="formcls">
+
+      <wux-cascader visible="{{ visible1 }}" default-value="{{ value1 }}" title="选择项目" options="{{ options1 }}" bind:close="onClose1" bind:change="onChange1" />
+     <wux-picker visible="{{ visible }}" controlled options="{{ options }}" value="{{ value3 }}"  data-index="1" bind:confirm="onConfirm" bind:valueChange="onValueChange" bind:visibleChange="onVisibleChange" />
+     <wux-popup-select visible="{{ visible4 }}" controlled bind:visibleChange="onVisibleChange4" />
+
+
+      <wux-cell-group title="请选择服务类型">
+          <wux-cell title="选择项目" extra="{{ title1 }}" bind:click="onOpen1"></wux-cell>
+          <wux-picker options="{{ options }}" value="{{ value3 }}" cascade cols="1" data-index="3" bind:confirm="onConfirm" bind:valueChange="onValueChange">
+          <wux-cell title="请选择物品类型" is-link extra="{{ displayValue3 }}"></wux-cell>
+            </wux-picker>
+          <wux-popup-select value="{{ value4 }}" options="{{ options4 }}" data-index="4" bind:confirm="onConfirm4">
+          <wux-cell title="请选择紧急度" is-link extra="{{ displayValue4 }}"></wux-cell>
+            </wux-popup-select>
+          <wux-popup-select value="{{ value5 }}" options="{{ options5 }}" data-index="5" bind:confirm="onConfirm4">
+          <wux-cell title="影响范围" is-link extra="{{ displayValue5 }}"></wux-cell>
+            </wux-popup-select>
+          <wux-cell hover-class="none">
+                <wux-input label="数量" placeholder="请填写数量" />
+            </wux-cell>
+          <wux-cell hover-class="none">
+                <wux-input label="总价" placeholder="选填" />
+            </wux-cell>
+          <wux-cell hover-class="none">
+                <wux-input label="备注" placeholder="如：物品名称，数量等" />
+            </wux-cell>
+          
+      </wux-cell-group>
+      <view class="uploadcls">
+      <wux-upload listType="picture-card" defaultFileList="{{ fileList }}" max="4" url="https://www.skyvow.cn/api/common/file" bind:change="onChange" bind:success="onSuccess" bind:fail="onFail" bind:complete="onComplete" bind:preview="onPreview">
+            <text>上传图片</text>
+        </wux-upload>
+      </view>
+      <view class="buttcls">
+      <wux-button block type="balanced">提交</wux-button>
+      <wux-button block outline type="stable">重置</wux-button>
+      </view>
+    
+
+  </view>
+
+</view>

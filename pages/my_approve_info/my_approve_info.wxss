@@ -1,0 +1,31 @@
+.status {
+  width: 100%;
+  margin-top: 50rpx;
+}
+
+.inner_status {
+
+  width: 100%;
+  height: 100rpx;
+  text-align:center;
+  line-height: 100rpx;
+  color: #33CD5F;
+}
+
+.buttcls {
+  width:100%; 
+}
+
+.buttin {
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+}
+
+.wux-cell__text {
+  width: 230rpx;
+}
+
+.wux-cell__ft {
+  /* width: 100% - 230rpx; */
+  word-break:break-all;
+}

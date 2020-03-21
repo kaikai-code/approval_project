@@ -1,0 +1,21 @@
+
+<wux-dialog id="wux-dialog" />
+<view class="out">
+
+  <view class="inone">
+    <image src="../../images/welcome.jpg" class="imagecls"></image>
+  </view>
+
+  <view class="intwo">
+    <view class="sub-title">服务大厅</view>
+        <wux-grids square>
+            <wux-grid thumb="../../images/logistics.png" label="后勤服务" bind:click="logistics"/>
+            <wux-grid thumb="../../images/it.png" label="IT服务" bind:click="it"/>
+            <wux-grid thumb="../../images/hr.png" label="HR服务" bind:click="alert"/>
+            <wux-grid thumb="../../images/self2.png" label="自助服务" bind:click="alert"/>
+            <wux-grid thumb="../../images/other.png" label="其他" bind:click="alert" />
+        </wux-grids>
+  </view>
+
+
+</view>

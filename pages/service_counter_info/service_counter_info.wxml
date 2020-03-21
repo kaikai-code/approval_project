@@ -1,0 +1,49 @@
+<wux-dialog id="wux-dialog" />
+<wux-toptips id="wux-toptips" />
+<wux-dialog id="wux-dialog--alert" />
+<view class="outcls">
+
+    <wux-popup-select visible="{{ visible }}" controlled value="{{ value }}" options="{{ options }}" data-index="1" bind:confirm="onConfirm" bind:valueChange="onValueChange" bind:visibleChange="onVisibleChange">
+    </wux-popup-select>
+
+
+
+
+  <view class="task_info">
+    <wux-cell-group title="任务详情">
+            <wux-cell title="姓名" extra="马凯凯"></wux-cell>
+            <wux-cell title="部门" extra="情报科"></wux-cell>
+            <wux-cell title="单号" extra="upc-220-03-05-01"></wux-cell>
+            <wux-cell title="项目" extra="情报科"></wux-cell>
+            <wux-cell title="显示器/数量" extra="5"></wux-cell>
+            <wux-cell title="键盘/数量" extra="15"></wux-cell>
+            <wux-cell title="总价" extra="998￥"></wux-cell>
+            <wux-cell title="紧急程度" extra="高"></wux-cell>
+            <wux-cell title="影响范围" extra="部门"></wux-cell>
+            <wux-cell title="备注" extra="电脑需要安装软件"></wux-cell>
+            <wux-cell title="价格" extra="998"></wux-cell>
+            <wux-cell title="附件" extra="点击查看" is-link url=""></wux-cell>
+            <!-- <wux-cell title="建议" extra="XXX"></wux-cell> -->
+      </wux-cell-group>
+  </view>
+
+  <view class="status">
+    <wux-cell-group title="状态:">
+    </wux-cell-group>
+    <view class="step">
+    <wux-steps>
+            <wux-step status="finish" title="科级" content="同意"></wux-step>
+            <wux-step status="process" title="部级" content="执行中"></wux-step>
+            <wux-step status="wait" title="担当" content="等待中"></wux-step>
+            <wux-step status="wait" title="工程师" content="等待中"></wux-step>
+        </wux-steps>
+      </view>
+
+    <view class="buttcls">
+      <view class="buttin">
+    <wux-button block type="balanced" bind:click="onclickbutt">分配服务人员</wux-button>
+      </view>
+    </view>
+  </view>
+
+</view>

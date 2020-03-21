@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+    "wux-cell-group": "../../wux/cell-group/index",
+    "wux-cell": "../../wux/cell/index",
+    "wux-card": "../../wux/card/index",
+    "wux-wing-blank": "../../wux/wing-blank/index",
+    "wux-button": "../../wux/button/index",
+    "wux-dialog": "../../wux/dialog/index",
+    "wux-toptips": "../../wux/toptips/index"
+  },
+  "navigationBarTitleText": "审批详情"
+}

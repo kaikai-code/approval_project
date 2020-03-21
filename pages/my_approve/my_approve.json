@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "wux-card": "../../wux/card/index",
+    "wux-wing-blank": "../../wux/wing-blank/index",
+    "wux-pagination": "../../wux/pagination/index",
+    "wux-filterbar": "../../wux/filterbar/index"
+  },
+  "navigationBarTitleText": "我的审批"
+}

@@ -1,0 +1,78 @@
+.bind_text {
+  font-size: 40rpx;
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+}
+
+.bind_hint {
+  font-size: 26rpx;
+  width: 100%;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  color: #8C8C8C;
+}
+.telcls {
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+
+.vcode_out {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+
+.vcode_1 {
+  height: 80rpx;
+  line-height: 80rpx;
+  margin-top: 15rpx;
+}
+
+.butt {
+  /* width: 80rpx !important;
+  height: 40rpx !important;
+  line-height: 40rpx !important; */
+  background-color: red;
+  /* font-size: 15rpx !important; */
+}
+
+.status {
+  width: 100%;
+  margin-top: 50rpx;
+}
+
+.inner_status {
+
+  width: 100%;
+  height: 100rpx;
+  text-align:center;
+  line-height: 100rpx;
+  color: #33CD5F;
+}
+
+
+.buttin {
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+}
+
+.wux-cell__text {
+  width: 200rpx;
+}
+
+.wux-cell__ft {
+  /* width: 100% - 230rpx; */
+  word-break:break-all;
+}
+
+.wux-button--block,.wux-button--full {
+
+  margin-top: -6rpx !important;
+
+}

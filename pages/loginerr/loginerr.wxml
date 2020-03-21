@@ -1,0 +1,8 @@
+<view class="container"> 
+  <view class="logo-group">
+    <icon type="warn" size="100" color="red"></icon>
+    <!-- <image class="logo" src="../../images/login.png"></image> --> 
+  </view>
+  <view class="tips">登录异常，请尝试重新登陆</view>
+  <button type="default" class="butt" bind:tap="returnlogin">返回</button>
+</view>

@@ -1,0 +1,23 @@
+.task {
+  margin-top: 20rpx;
+
+}
+
+.task_info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wux-filterbar__item--checked {
+  color: #33CD5F !important;
+
+}
+
+.wux-cell__text {
+  width: 230rpx;
+}
+
+.wux-cell__ft {
+  /* width: 100% - 230rpx; */
+  word-break:break-all;
+}

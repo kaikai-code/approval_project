@@ -1,0 +1,14 @@
+.uploadcls {
+  margin-top: 30rpx;
+  margin-left: 30rpx;
+}
+
+.modify_status {
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+}
+.wux-actionsheet__content--theme-wx .wux-actionsheet__button {
+font-size: 30rpx !important;
+color: #000;
+
+}

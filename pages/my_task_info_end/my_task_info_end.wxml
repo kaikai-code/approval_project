@@ -1,0 +1,26 @@
+<wux-dialog id="wux-dialog" />
+<wux-actionsheet id="wux-actionsheet" />
+<wux-toptips id="wux-toptips" />
+<view class="outcls">
+
+  <view class="task_info">
+    <wux-cell-group title="请上传本次服务相关资料">
+            <wux-cell hover-class="none">
+                <wux-textarea rows="3" label="备注" placeholder="如：本次任务的描述" hasCount  bind:confirm="remark" bind:blur="remark" bind:change="remark" value="{{remark_value}}" controlled/>
+            </wux-cell>
+      </wux-cell-group>
+
+      <view class="uploadcls">
+      <wux-upload listType="picture-card" defaultFileList="{{ fileList }}" max="4" url="https://www.skyvow.cn/api/common/file" bind:change="onChange" bind:success="onSuccess" bind:fail="onFail" bind:complete="onComplete" bind:preview="onPreview">
+            <text>上传图片</text>
+        </wux-upload>
+      </view>
+  </view>
+
+
+  <view class="modify_status">
+      <wux-button block type="balanced" bind:click="submit">提交</wux-button>
+      <wux-button block outline type="stable" bind:click="reset">重置</wux-button>
+  </view>
+
+</view>

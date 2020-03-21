@@ -1,0 +1,17 @@
+
+.title {
+  width: 100%;
+  height: 50rpx;
+  margin-left: 30rpx;
+  
+}
+
+.uploadcls {
+  margin-top: 30rpx;
+  margin-left: 30rpx;
+}
+
+.buttcls {
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+}

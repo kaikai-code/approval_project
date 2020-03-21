@@ -1,0 +1,41 @@
+.status {
+  width: 100%;
+  margin-top: 20rpx;
+}
+
+
+.step {
+  margin-top: 30rpx;
+}
+
+.buttcls {
+  width:100%; 
+  margin-top: 40rpx;
+}
+
+.buttin {
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+}
+
+.wux-step--finish .wux-step__icon {
+  border: #33CD5F solid 2rpx !important;
+  color: #33CD5F !important;
+
+}
+
+.wux-step--process .wux-step__icon {
+  border: #33CD5F solid 2rpx !important;
+  color: #fff !important;
+  background: #33CD5F !important;
+
+}
+.wux-step--finish .wux-step__ft::after {
+  background: #33CD5F !important;
+
+}
+
+
+.wux-step__title {
+    font-size: 26rpx;
+}

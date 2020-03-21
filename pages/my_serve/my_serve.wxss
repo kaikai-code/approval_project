@@ -1,0 +1,34 @@
+
+.task {
+  margin-top: 20rpx;
+
+}
+
+.task_info {
+  display: flex;
+  justify-content: space-between;
+  height: 45rpx;
+  line-height: 45rpxpx;
+  margin-bottom: 10rpx;
+}
+
+.wux-cell__text {
+  width: 230rpx;
+}
+
+.wux-cell__ft {
+  /* width: 100% - 230rpx; */
+  word-break:break-all;
+}
+
+.wux-card__hd {
+
+  background-color: #DBFCE5 !important;
+
+}
+
+.wux-rater {
+
+  margin-top: -15rpx !important;
+
+}

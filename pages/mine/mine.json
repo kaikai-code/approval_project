@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "wux-avatar": "../../wux/avatar/index",
+    "wux-cell-group": "../../wux/cell-group/index",
+    "wux-cell": "../../wux/cell/index"
+  },
+  "navigationBarTitleText": "个人中心"
+}

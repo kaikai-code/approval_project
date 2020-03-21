@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "wux-avatar": "../../wux/avatar/index",
+    "wux-cell-group": "../../wux/cell-group/index",
+    "wux-cell": "../../wux/cell/index",
+    "wux-card": "../../wux/card/index",
+    "wux-wing-blank": "../../wux/wing-blank/index",
+    "wux-rater": "../../wux/rater/index"
+  },
+  "navigationBarTitleText": "我的服务"
+}

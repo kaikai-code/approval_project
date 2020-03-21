@@ -1,0 +1,33 @@
+.wux-cell__text {
+  width: 230rpx;
+}
+
+.wux-cell__ft {
+  /* width: 100% - 230rpx; */
+  word-break:break-all;
+}
+
+.status {
+  width: 100%;
+  margin-top: 50rpx;
+}
+
+.inner_status {
+
+  width: 100%;
+  height: 100rpx;
+  text-align:center;
+  line-height: 100rpx;
+  color: #33CD5F;
+}
+.modify_status {
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+}
+.wux-actionsheet__content--theme-wx .wux-actionsheet__button {
+font-size: 30rpx !important;
+color: #000;
+
+}
+
+

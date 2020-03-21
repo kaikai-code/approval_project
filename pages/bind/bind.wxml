@@ -1,0 +1,49 @@
+<wux-dialog id="wux-dialog" />
+<wux-toptips id="wux-toptips" />
+<wux-dialog id="wux-dialog--alert" />
+<view class="outcls">
+  <view class="bind_text">绑定</view>
+  <view class="bind_hint">检测到您未绑定手机号，请先绑定手机号</view>
+  <view class="task_info">
+    <wux-cell-group title="请填写相关信息:">
+      <wux-cell hover-class="none">
+        
+        <wux-input label="" value="{{ tel }}" controlled error="{{ error }}" type="number" bind:blur="onBlur" bind:error="onError" placeholder="请输入手机号码" />
+      </wux-cell>
+    <wux-cell hover-class="none">
+        <view class="vcode_out">
+          <view class="vcode_1">
+          <wux-input label="" value="{{ vcode_input }}" controlled type="text" bind:blur="onBlur_vcode" placeholder="请输入验证码" />
+          </view>
+          <view>
+            <wux-vcode bind:change="onChange" num="4" hasLine="{{false}}" str="abcdefghijklmnopqrstuvwxyz0123456789"/>
+          </view>
+        
+        </view>
+    </wux-cell>
+
+
+    <wux-cell hover-class="none">
+
+        <view class="vcode_out">
+          <view class="vcode_1">
+          <wux-input label="" value="{{ tel_vcode }}" controlled type="text" bind:blur="onBlur_tel_vcode" placeholder="请输入短信验证码" />
+          </view>
+          <!-- <view class="butt" > -->
+            <wux-button block type="balanced" bind:click="send" disabled="{{button}}">{{button_value}}</wux-button>
+            <!-- <button type="primary" bind:tap="send">获取验证码</button> -->
+          <!-- </view> -->
+        </view>
+    </wux-cell>
+            
+      </wux-cell-group>
+  </view>
+
+  <view class="status">
+    <view class="buttin">
+    <wux-button block type="balanced" bind:click="submit" >提交</wux-button>
+      </view>
+
+  </view>
+
+</view>

@@ -1,0 +1,62 @@
+<view class="outcls">
+  <view class="avatar">
+    <!-- <wux-avatar size="large" src="{{ avatar }}" /> -->
+    <image src="{{ avatar }}" class="avatarcls"></image>
+  </view>
+  <view class="name">{{ name }}</view>
+
+  <view class="info">
+      <wux-cell-group title="个人详情">
+        <wux-cell title="电话" extra="18211112222"></wux-cell>
+        <wux-cell title="部门" extra="开发部"></wux-cell>
+        <wux-cell title="职位" extra="开发工程师"></wux-cell>
+      </wux-cell-group>
+      <wux-cell-group title="未完成项目数量">
+        <wux-cell title="我的任务" is-link extra="6" url="../../pages/my_task/my_task"></wux-cell>
+        <wux-cell title="我的审批" is-link extra="3"  url="../../pages/my_approve/my_approve"></wux-cell>
+        <wux-cell  title="我的提交" is-link extra="4" url="../../pages/my_submit/my_submit"></wux-cell>
+        <wux-cell title="我的分配"  is-link  extra="2" url="../../pages/service_counter/service_counter"></wux-cell>
+        </wux-cell-group>
+
+    <view class="task">
+    <wux-wing-blank size="default">
+      <wux-card title="我的总任务数" extra="23">
+              <view class="task_info" slot="body">
+              <view slot="body">平均分</view>
+              <view slot="body"><wux-rater  disabled default-value="{{ 4 }}" /></view>
+              </view>
+              <view class="task_info" slot="body">
+              <view slot="body">平均响应时间</view>
+              <view slot="body">3分钟</view>
+              </view>
+              <view class="task_info" slot="body">
+              <view slot="body">平均完成时间</view>
+              <view slot="body">22分钟</view>
+              </view>
+              
+        </wux-card>
+    </wux-wing-blank>
+    </view>
+    <view class="task">
+    <wux-wing-blank size="default">
+      <wux-card title="我的本月任务数" extra="10">
+              <view class="task_info" slot="body">
+              <view slot="body">平均分</view>
+              <view slot="body">
+              <wux-rater  disabled default-value="{{ 4.5 }}" />
+              </view>
+              </view>
+              <view class="task_info" slot="body">
+              <view slot="body">平均响应时间</view>
+              <view slot="body">4分钟</view>
+              </view>
+              <view class="task_info" slot="body">
+              <view slot="body">平均完成时间</view>
+              <view slot="body">15分钟</view>
+              </view>
+              
+        </wux-card>
+    </wux-wing-blank>
+    </view>
+  </view>
+</view>
