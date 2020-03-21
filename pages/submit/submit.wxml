@@ -94,16 +94,22 @@
           </view>
 
           </wux-cell>
-        <wux-cell hover-class="none">
+        <wux-cell hover-class="none" wx:for="{{mandator_list}}" wx:key="{{id}}">
         <view class="task">
     <wux-wing-blank size="default">
-      <wux-card title="UPC-0001-情报科" extra="非常高" actions="{{ actions }}" bind:action="onAction">
+      <wux-card actions="{{ actions }}" bind:action="remove_mandator" data-index="{{index}}">
               <view class="task_info" slot="body">
-              <view slot="body">马凯凯</view>
-              <view slot="body">2020-03-05</view>
+              <view slot="body" class="name">姓名：</view>
+              <view slot="body" class="mandator_value">{{item.name}}</view>
               </view>
-              <view slot="body">办公用品申请</view>
-              <view slot="footer">审批中：科长审批</view>
+              <view class="task_info" slot="body">
+              <view slot="body" class="name">电话：</view>
+              <view slot="body" class="mandator_value">{{item.tel}}</view>
+              </view>
+              <view class="task_info" slot="body">
+              <view slot="body" class="name">备注：</view>
+              <view slot="body" class="mandator_value">{{item.remark}}</view>
+              </view>
         </wux-card>
     </wux-wing-blank>
     </view>

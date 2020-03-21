@@ -166,7 +166,12 @@ Page({
     value7: '',
     value8: '',
     value9: '',
-    mandator_list: []
+    mandator_list: [],
+
+    actions: [{
+      text: '删除该委托人',
+      type: 'default',
+    }],
 
   },
 
@@ -361,12 +366,15 @@ Page({
         content: content,
       })
     } else {
+      var id = mandator_list.length + 1
       mandator_list.push({
+        "id": id,
         "name": mandator_name,
         "tel": mandator_tel,
         "remark": mandator_remark
       })
       this.setData({ 
+        mandator_show : "点击添加委托联系人 +",
         mandator_list: mandator_list,
         mandator_flag: false,
         value7: "",
@@ -378,7 +386,16 @@ Page({
     }
 
   },
+  remove_mandator: function(e){
+    console.log(e)
+    var index = e.currentTarget.dataset.index
+    var mandator_list = this.data.mandator_list
+    mandator_list.splice(index, 1)
+    this.setData({
+      mandator_list: mandator_list,
+    })
 
+  },
 
   reset: function(){
     var that = this

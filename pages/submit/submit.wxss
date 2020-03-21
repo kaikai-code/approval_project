@@ -48,3 +48,21 @@
   margin-bottom: 10rpx;
   margin-top: 10rpx;
 }
+
+.wux-card__action--default {
+  color: #EF473A !important;
+}
+
+.task_info {
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+.name {
+  flex-basis: 160rpx;
+  flex-shrink: 0;
+}
+
+.mandator_value {
+  word-break:break-all;
+}
